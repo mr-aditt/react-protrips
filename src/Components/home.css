@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222F3E;
+    overflow: hidden;
+}
+
+.navbar {
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons:hover {
+    color: rgb(19, 19, 19);
+}
+
+.num-trips {
+    color: white;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.num-trips span{
+    font-size: 6rem;
+    padding: 0 5px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 60vh auto;
+}
+
+.summary div {
+    padding: 0 1em;    
+}
+
+.summary div>span{
+    color: whitesmoke;
+    font-size: 4rem;
+    padding: 0 5px;
+}
+
+.indicate {
+    transform: scale(1.5);
+}
+
+/* ADD TRIP */
+
+.add {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+    color: whitesmoke;
+}
+
+.add-trip h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 3rem;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-15%,-10%);
+}
+
+.add span {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 25vw;
+    margin: 0 auto;
+    padding: 0.8em 0;
+}
+
+.add input, .add select {
+    border: 2px solid white;
+    height: 5vh;
+    color: white;
+    font-size: large;
+}
+
+.add button{
+    display: block;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 0.5em 2em;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px auto;
+}
+
+.add button:hover{
+    transform: scale(1.1);
+    transition: ease-out 0.2s;
+    box-shadow: 6px 5px 10px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* TRIP TABLE */
+
+table {
+    border-collapse: collapse;
+    color: whitesmoke;
+    margin: 30vh auto;
+    font-size: large;
+    width: 40vw;
+    /* height: 50vh; */
+  }
+
+/* thead, tbody {
+    display: block;
+} */
+
+tbody {
+    height: 100px;
+    overflow-y: scroll;
+}
+
+td, th {
+    border: 1px solid rgb(224, 224, 224);
+    padding: 1em 1.5em;
+    text-align: center;
+}
+
+.trips-data {
+    overflow-y: scroll;
+}
